@@ -1,0 +1,48 @@
+.menu {
+  padding-block: 32px;
+  background-color: #fff;
+}
+
+.menu-cards {
+  margin-top: 31px;
+  display: flex;
+  gap: 32px;
+}
+
+.menu-cards .card {
+  width: 304px;
+  height: 304px;
+  transition: all 0.2s ease;
+}
+
+.menu-cards .card:hover {
+  transform: scale(1.015);
+}
+
+.menu-cards .card a {
+  position: relative;
+}
+
+.menu-cards .card a::before {
+  position: absolute;
+  content: '';
+  bottom: 4px;
+  width: 304px;
+  height: 304px;
+  background: var(--linear-gradient);
+  border-radius: var(--radius-md);
+}
+
+.menu-cards .card img {
+  border-radius: var(--radius-md);
+}
+
+.menu-cards .card h3 {
+  position: absolute;
+  bottom: 21px;
+  left: 16px;
+  font-size: 24px;
+  font-weight: var(--semi-bold);
+  color: var(--white);
+  z-index: 5;
+}

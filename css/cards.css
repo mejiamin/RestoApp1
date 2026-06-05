@@ -1,0 +1,109 @@
+.stock {
+  padding-block: 32px;
+  background-color: #fff;
+}
+
+.events {
+  padding-block: 32px;
+  background-color: #fff;
+}
+
+.establishments {
+  padding-block: 32px;
+  background-color: #fff;
+}
+
+.events .container {
+  display: flex;
+  flex-direction: column;
+}
+
+.cards {
+  margin-top: 31px;
+  display: flex;
+  gap: 32px;
+  color: var(--white);
+}
+
+.cards .card {
+  height: 360px;
+  transition: all 0.2s ease;
+}
+
+.cards .card:hover {
+  transform: scale(1.01);
+}
+
+.cards .card a {
+  position: relative;
+  display: block;
+}
+
+.cards .card a::before {
+  position: absolute;
+  content: '';
+  bottom: 4px;
+  width: 100%;
+  height: 100%;
+  background: var(--linear-gradient);
+  border-radius: var(--radius-md);
+}
+
+.cards .card img {
+  height: 360px;
+  object-fit: cover;
+  border-radius: var(--radius-md);
+}
+
+.card-title {
+  max-width: 576px;
+  position: absolute;
+  bottom: 36px;
+  left: 32px;
+  font-size: 32px;
+  font-weight: var(--semi-bold);
+}
+
+.left-badges {
+  position: absolute;
+  top: 32px;
+  left: 32px;
+  display: flex;
+  gap: 8px;
+}
+
+.right-badges {
+  position: absolute;
+  top: 32px;
+  right: 32px;
+}
+
+.left-badge,
+.right-badge {
+  padding: 9px 8px;
+  font-size: 14px;
+  font-weight: var(--semi-bold);
+  background-color: var(--card-content);
+  border-radius: var(--radius-sm);
+}
+
+.right-badge.positive {
+  color: var(--black);
+  background-color: var(--yellow);
+}
+
+.right-badge.negative {
+  background-color: var(--grey-2);
+}
+
+.events .btn {
+  margin-top: 32px;
+  padding: 17px 0 14px;
+  font-size: 18px;
+  font-weight: var(--semi-bold);
+  color: var(--black);
+}
+
+.events .btn:hover {
+  color: var(--white);
+}

@@ -1,0 +1,97 @@
+.new-items {
+  padding-block: 32px;
+  background-color: #fff;
+}
+
+.popular {
+  padding-block: 32px;
+  background-color: #fff;
+}
+
+.item-cards {
+  margin-top: 31px;
+  display: flex;
+  gap: 32px;
+}
+
+.item-cards .card {
+  width: 304px;
+  height: 468px;
+}
+
+.item-cards .card a {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 396px;
+}
+
+.item-image {
+  border-radius: var(--radius-md);
+}
+
+.item-title {
+  margin-top: 14px;
+  margin-bottom: 5px;
+  font-size: 18px;
+  font-weight: var(--semi-bold);
+}
+
+.item-description {
+  width: 303px;
+  height: 48px;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  text-overflow: ellipsis;
+  word-break: break-word;
+  line-height: 1.5;
+  color: var(--grey-2);
+}
+
+.item-btn {
+  width: 100%;
+  height: 56px;
+  margin-top: 16px;
+  background-color: var(--white-2);
+  border-radius: var(--radius-md);
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.item-btn:hover {
+  color: var(--black-2);
+  background-color: var(--white-hover);
+}
+
+.item-btn span {
+  display: block;
+  margin-top: 2px;
+  font-size: 20px;
+  font-weight: var(--semi-bold);
+}
+
+.item-badges {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  display: flex;
+  gap: 8px;
+  transition: all 0.2s ease;
+}
+
+.item-cards .card a img {
+  transition: all 0.2s ease;
+}
+
+.item-cards .card a:hover img,
+.item-cards .card a:hover .item-badges {
+  transform: scale(1.015);
+}
+
+.item-cards .card a:hover .item-badges {
+  top: 6px;
+  right: 6px;
+}

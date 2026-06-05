@@ -1,0 +1,122 @@
+.header {
+  position: relative;
+  color: var(--grey);
+  background: linear-gradient(90deg, #FEDD2C 0%, #F9C201 100%);
+  z-index: 10;
+}
+
+.bubble {
+  height: 48px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  color: var(--white);
+  background-color: rgba(28, 28, 28, 1);
+}
+
+.bubble p {
+  font-size: 18px;
+  font-weight: var(--semi-bold);
+}
+
+.bubble .btn-close {
+  margin-top: 1px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.bubble .btn-close:hover {
+  opacity: 0.8;
+}
+
+.header .container {
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-logo {
+  margin-top: 3px;
+}
+
+.header-nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header-menu {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  font-weight: var(--semi-bold);
+}
+
+.header-menu .menu-item a {
+  padding-block: 8px;
+  transition: color 0.2s ease;
+}
+
+.header-menu .menu-item a:hover {
+  color: var(--black);
+}
+
+.header-right {
+  height: 48px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 64px;
+}
+
+.header-contact {
+  text-align: right;
+  font-style: normal;
+}
+
+.header-contact .contact-phone {
+  font-size: 18px;
+  font-weight: var(--semi-bold);
+  transition: color 0.2s ease;
+}
+
+.header-contact .contact-phone:hover {
+  color: var(--black);
+}
+
+.header-contact .contact-hours {
+  margin-top: 1px;
+  font-size: 12px;
+}
+
+.header-actions {
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.header-actions .btn {
+  width: 56px;
+}
+
+.header-actions .btn svg {
+  margin-top: 3px;
+}
+
+.header-actions .btn svg path,
+.header-actions .btn.bg-black svg path {
+  transition: fill 0.2s ease;
+}
+
+.header-actions .btn:hover svg path {
+  fill: var(--white);
+}
+
+.header-actions .btn.bg-black:hover svg path {
+  fill: var(--black);
+}

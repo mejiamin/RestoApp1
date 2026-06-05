@@ -1,0 +1,22 @@
+:root {
+  --radius-xs: 4px;
+  --radius-sm: 8px;
+  --radius-md: 16px;
+
+  --semi-bold: 600;
+  --regular: 400;
+
+  --default: rgba(114, 114, 114, 1);
+  --white: rgba(255, 255, 255, 1);
+  --white-2: rgba(244, 244, 244, 1);
+  --white-hover: rgba(232, 232, 232, 1);
+  --black: rgba(28, 28, 28, 1);
+  --black-2: rgba(57, 57, 57, 1);
+  --grey: rgba(85, 85, 85, 1);
+  --grey-2: rgba(114, 114, 114, 1);
+  --grey-3: rgba(166, 166, 166, 1);
+  --yellow: rgba(254, 221, 44, 1);
+  --card-content: rgba(0, 0, 0, 0.6);
+
+  --linear-gradient: linear-gradient(180deg, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0.5) 100%);
+}
